@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ПРОТОТИП — Бронирование | Сладкие сны</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <span class="badge">ПРОТОТИП</span>
+
+    <header class="header">
+        <div class="container">
+            <div>
+                <h1 class="logo">Сладкие сны</h1>
+                <p class="slogan">Ваш уют — наша забота</p>
+            </div>
+            <nav class="nav">
+                <a href="index.html">Главная</a>
+                <a href="catalog.html">Каталог</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <h2>Бронирование номера</h2>
+
+            <form class="form" onsubmit="return false;">
+                <label>Имя *
+                    <input type="text" placeholder="Иван">
+                </label>
+                <label>Фамилия *
+                    <input type="text" placeholder="Иванов">
+                </label>
+                <label>Телефон *
+                    <input type="text" placeholder="+7(XXX)XXX-XX-XX">
+                </label>
+                <label>E-mail *
+                    <input type="text" placeholder="example@mail.ru">
+                </label>
+                <label>Дата заезда *
+                    <div class="date-wrap">
+                        <input type="text" placeholder="ДД.ММ.ГГГГ">
+                        <span>📅</span>
+                    </div>
+                </label>
+                <label>Дата выезда *
+                    <div class="date-wrap">
+                        <input type="text" placeholder="ДД.ММ.ГГГГ">
+                        <span>📅</span>
+                    </div>
+                </label>
+                <button class="btn">Отправить заявку</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>📍 г. Москва, ул. Примерная, 15</p>
+            <p>🕐 Круглосуточно, 24/7</p>
+            <p>📞 +7 (495) 111-22-33</p>
+            <p>✉ info@sweetdreams.ru</p>
+        </div>
+    </footer>
+</body>
+</html>
