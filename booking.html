@@ -26,6 +26,8 @@
         <div class="container">
             <h2>Бронирование номера</h2>
 
+            <div id="roomInfo" class="room-info"></div>
+
             <form class="form" onsubmit="return false;">
                 <label>Имя *
                     <input type="text" placeholder="Иван">
@@ -64,5 +66,21 @@
             <p>✉ info@sweetdreams.ru</p>
         </div>
     </footer>
+
+    <script>
+        const rooms = {
+            1: { name: 'Стандартный', price: '3 500 ₽/сутки' },
+            2: { name: 'Студия', price: '5 500 ₽/сутки' },
+            3: { name: 'Люкс', price: '9 000 ₽/сутки' },
+            4: { name: 'Стандартный', price: '3 200 ₽/сутки' },
+            5: { name: 'Студия', price: '6 000 ₽/сутки' },
+            6: { name: 'Люкс', price: '10 000 ₽/сутки' }
+        };
+        const id = new URLSearchParams(location.search).get('room_id');
+        if (id && rooms[id]) {
+            document.getElementById('roomInfo').innerHTML =
+                '<h3>Вы бронируете: ' + rooms[id].name + '</h3><p>' + rooms[id].price + '</p>';
+        }
+    </script>
 </body>
 </html>
